@@ -14,3 +14,7 @@ RUN npm run build
 FROM builder as dev
 
 CMD ["npm", "run", "start:dev"]
+
+FROM builder as prod
+
+CMD ["npm", "run", "start"]
